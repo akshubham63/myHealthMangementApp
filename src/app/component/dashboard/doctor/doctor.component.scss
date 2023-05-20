@@ -1,0 +1,19 @@
+@import '../../../../assets/scss/utilities/mixin';
+.add-doc-card{
+    cursor: pointer;
+    background-color: #ededed;
+    color: #3f51b5;
+    &:hover,
+    &:active,
+    &:focus{
+        @include shadow-content;
+    }
+    .add-doc-content{
+        font-size: 1.3rem;
+        @include content-center;
+        flex-direction: column;
+        .add-doc-icon{
+            font-size: 1.8rem;
+        }
+    }
+}
